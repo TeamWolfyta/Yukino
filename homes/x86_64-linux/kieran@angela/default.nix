@@ -8,9 +8,12 @@ with lib;
 with lib.yukino;
 {
   yukino = {
+    thefuck = enabled;
+
     user = {
       name = "kieran";
     };
+
     zsh = enabled;
   };
 
