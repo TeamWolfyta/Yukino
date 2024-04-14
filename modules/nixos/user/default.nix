@@ -23,6 +23,7 @@ in
         ${_config.name} = {
           uid = 1000;
           shell = pkgs.zsh;
+          extraGroups = [ "wheel" ];
           isNormalUser = true;
           initialPassword = "1234";
         };
