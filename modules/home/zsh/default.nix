@@ -15,6 +15,11 @@ in
   };
 
   config = mkIf _config.enable {
+
+    home.shellAliases = {
+      yukino-switch = "sudo nixos-rebuild switch --flake github:TeamWolfyta/Yukino --option tarball-ttl 0";
+    };
+
     programs = {
       zsh = {
         enable = true;
