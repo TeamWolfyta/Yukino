@@ -47,6 +47,9 @@ in
         enable = true;
         enableZshIntegration = true;
         settings = {
+          hostname = {
+            ssh_only = false;
+          };
           sudo = {
             disabled = false;
           };
