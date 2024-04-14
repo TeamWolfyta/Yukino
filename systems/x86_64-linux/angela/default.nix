@@ -13,6 +13,7 @@ with lib.yukino;
     user = {
       name = "kieran";
     };
+
     wsl = enabled;
   };
 
