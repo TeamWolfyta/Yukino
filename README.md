@@ -4,6 +4,6 @@
 
 ## Usage
 
-```shell
+```nushell
 sudo nixos-rebuild switch --flake github:TeamWolfyta/Yukino --option tarball-ttl 0
 ```
