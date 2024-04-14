@@ -11,6 +11,7 @@ with lib.yukino;
     user = {
       name = "kieran";
     };
+    zsh = enabled;
   };
 
   # This value determines the Home Manager release that your
