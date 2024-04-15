@@ -8,6 +8,8 @@ with lib;
 with lib.yukino;
 {
   yukino = {
+    gh = enabled;
+
     git = {
       enable = true;
       userName = "TeamWolfyta";
