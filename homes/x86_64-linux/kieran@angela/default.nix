@@ -8,7 +8,15 @@ with lib;
 with lib.yukino;
 {
   yukino = {
-    thefuck = enabled;
+
+    git = {
+      enable = true;
+      userName = "kieran";
+      userEmail = "kieran@wolfyta.dev";
+      signingKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHK0wpkhtQEPJq1H3b8Agnp9JHNMRiUoLcW30WRwPKMH";
+    };
+
+    thefuck = enassh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHK0wpkhtQEPJq1H3b8Agnp9JHNMRiUoLcW30WRwPKMHbled;
 
     user = {
       name = "kieran";

@@ -12,6 +12,7 @@ in
 {
   options.yukino.user = with types; {
     name = mkOpt str "kieran" "yukino.user.name";
+    email = mkOpt str "kieran@wolfyta.dev" "yukino.user.email";
   };
 
   config = {
