@@ -16,7 +16,7 @@ with lib.yukino;
       signingKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHK0wpkhtQEPJq1H3b8Agnp9JHNMRiUoLcW30WRwPKMH";
     };
 
-    thefuck = enassh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHK0wpkhtQEPJq1H3b8Agnp9JHNMRiUoLcW30WRwPKMHbled;
+    thefuck = enabled;
 
     user = {
       name = "kieran";
