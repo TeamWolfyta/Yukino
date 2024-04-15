@@ -6,7 +6,7 @@ let
   user = config.yukino.user;
 in
 {
-  options.yukino.git = {
+  options.yukino.git = with types; {
     enable = mkBoolOpt false "yukino.git.enable";
     userName = mkOpt str user.name "yukino.git.userName";
     userEmail = mkOpt str user.email "yukino.git.userEmail";
