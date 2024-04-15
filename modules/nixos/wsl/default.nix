@@ -19,13 +19,10 @@ in
       noXlibs = mkForce false;
 
       sessionVariables = {
-        BROWSER = "wsl-open";
+        BROWSER = "wslu";
       };
 
-      systemPackages = with pkgs; [
-        wsl-open
-        wslu
-      ];
+      systemPackages = with pkgs; [ wslu ];
     };
   };
 }
