@@ -11,6 +11,7 @@ with lib.yukino;
 
   yukino = {
     locale = enabled;
+    time = enabled;
 
     user = {
       name = "kieran";
