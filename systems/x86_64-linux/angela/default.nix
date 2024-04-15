@@ -10,6 +10,8 @@ with lib.yukino;
   imports = [ ./hardware.nix ];
 
   yukino = {
+    locale = enabled;
+
     user = {
       name = "kieran";
     };
