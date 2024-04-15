@@ -24,6 +24,7 @@ with lib.yukino;
       name = "kieran";
     };
 
+    zoxide = enabled;
     zsh = enabled;
   };
 
