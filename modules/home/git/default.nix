@@ -20,21 +20,11 @@ in
       lfs = enabled;
       signing.key = _config.signingKey;
       extraConfig = {
-        pull = {
-          rebase = true;
-        };
-        init = {
-          defaultBranch = "main";
-        };
-        rebase = {
-          autoStash = true;
-        };
-        commit = {
-          gpgsign = true;
-        };
-        tag = {
-          gpgsign = true;
-        };
+        pull.rebase = true;
+        init.defaultBranch = "main";
+        rebase.autoStash = true;
+        commit.gpgsign = true;
+        tag.gpgsign = true;
         gpg = {
           format = "ssh";
           ssh = {
