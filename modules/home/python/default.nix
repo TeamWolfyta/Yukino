@@ -15,6 +15,6 @@ in
   };
 
   config = mkIf _config.enable {
-    home.packages = [ (pkgs.python3.withPackages (python-pkgs: [ python-pkgs."rembg[cli]" ])) ];
+    home.packages = [ (pkgs.python3.withPackages (ppkgs: with ppkgs; [ "rembg[cli]" ])) ];
   };
 }
