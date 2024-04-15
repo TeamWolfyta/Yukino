@@ -31,6 +31,7 @@ in
           enable = true;
           plugins = [
             "docker"
+            "eza"
             "sudo"
           ];
         };

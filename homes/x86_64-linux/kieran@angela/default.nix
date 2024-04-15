@@ -8,6 +8,7 @@ with lib;
 with lib.yukino;
 {
   yukino = {
+    eza = enabled;
     gh = enabled;
 
     git = {
