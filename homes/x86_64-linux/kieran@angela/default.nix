@@ -11,7 +11,7 @@ with lib.yukino;
 
     git = {
       enable = true;
-      userName = "kieran";
+      userName = "TeamWolfyta";
       userEmail = "kieran@wolfyta.dev";
       signingKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHK0wpkhtQEPJq1H3b8Agnp9JHNMRiUoLcW30WRwPKMH";
     };
