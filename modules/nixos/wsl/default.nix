@@ -19,7 +19,7 @@ in
       noXlibs = mkForce false;
 
       sessionVariables = {
-        BROWSER = "wslu";
+        BROWSER = "wslview";
       };
 
       systemPackages = with pkgs; [ wslu ];
