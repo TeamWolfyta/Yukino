@@ -18,7 +18,6 @@ with lib.yukino;
       signingKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHK0wpkhtQEPJq1H3b8Agnp9JHNMRiUoLcW30WRwPKMH";
     };
 
-    python = enabled;
     thefuck = enabled;
 
     user = {
