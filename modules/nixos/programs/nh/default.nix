@@ -11,11 +11,11 @@ in
   };
 
   config = mkIf _config.enable {
+    programs.nh = enabled;
     yukino.programs.home-manager.extraOptions = {
       home.sessionVariables = {
         FLAKE = "$HOME/projects/teamwolfyta/yukino";
       };
     };
-    programs.nh = enabled;
   };
 }
