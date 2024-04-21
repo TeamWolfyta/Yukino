@@ -9,7 +9,7 @@ in
     enable = mkBoolOpt false "yukino.programs.thefuck.enable";
   };
 
-  config = mkIf _config.thefuck {
+  config = mkIf _config.enable {
     programs.thefuck = {
       enable = true;
       enableInstantMode = true;
