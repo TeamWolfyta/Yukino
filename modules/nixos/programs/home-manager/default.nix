@@ -6,7 +6,7 @@ let
   user = config.yukino.config.user;
 in
 {
-  options.yukino.programs.home-manager = {
+  options.yukino.programs.home-manager = with types; {
     extraOptions = mkOpt attrs { } "yukino.programs.home-manager.extraOptions";
   };
 
