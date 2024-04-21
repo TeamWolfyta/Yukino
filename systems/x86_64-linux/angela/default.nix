@@ -9,8 +9,6 @@ with lib.yukino;
 {
   imports = [ ./hardware.nix ];
 
-  environment.variables.FLAKE = "/home/kieran/projects/teamwolfyta/yukino";
-
   yukino = {
     config = {
       locale = enabled;
