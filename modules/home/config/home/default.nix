@@ -5,7 +5,7 @@ let
   _config = config.yukino.config.home;
 in
 {
-  options.yukino.config.home = {
+  options.yukino.config.home = with types; {
     username = mkOpt str (config.snowfallorg.user.name or "kieran") "yukino.config.home.username";
     useremail = mkOpt str "kieran@wolfyta.dev" "yukino.config.home.useremail";
   };
