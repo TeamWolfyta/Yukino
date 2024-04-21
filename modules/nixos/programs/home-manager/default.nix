@@ -14,7 +14,7 @@ in
     home-manager = {
       useUserPackages = true;
       useGlobalPkgs = true;
-      users.${user.name} = mkAliasDefinitions _config.extraOptions;
+      users.${user.name} = mkAliasDefinitions options.yukino.programs.home-manager.extraOptions;
     };
   };
 }
