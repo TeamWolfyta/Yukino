@@ -13,11 +13,11 @@ with lib.yukino;
     config = {
       locale = enabled;
       nix = enabled;
+      packages = enabled;
       user.name = "kieran";
       wsl = enabled;
     };
     programs = {
-      common = enabled;
       nh = enabled;
       nix-ld = enabled;
     };
