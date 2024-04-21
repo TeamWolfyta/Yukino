@@ -16,6 +16,12 @@ in
   };
 
   config = mkIf _config.enable {
+    environment.systemPackages = with pkgs; [
+      nix-index
+      nix-output-monitor
+      nix-prefetch-git
+      nixfmt
+    ];
     nix =
       let
         users = [
