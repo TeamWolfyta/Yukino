@@ -11,10 +11,10 @@ in
   };
 
   config = {
-    snowfallorg.users.${user.name}.home.config = _config.extraOptions;
     home-manager = {
       useUserPackages = true;
       useGlobalPkgs = true;
+      users.${user.name} = mkAliasDefinitions _config.extraOptions;
     };
   };
 }
