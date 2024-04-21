@@ -13,7 +13,7 @@ in
   config = mkIf _config.enable {
     programs.nh = {
       enable = true;
-      flake = "/home/${user.name}/projects/teamwolfyta/yukino";
+      flake = "$HOME/projects/teamwolfyta/yukino";
     };
   };
 }
