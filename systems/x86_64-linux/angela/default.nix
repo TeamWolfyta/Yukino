@@ -10,14 +10,17 @@ with lib.yukino;
   imports = [ ./hardware.nix ];
 
   yukino = {
-    locale = enabled;
-    time = enabled;
-
-    user = {
-      name = "kieran";
+    config = {
+      locale = enabled;
+      nix = enabled;
+      user.name = "kieran";
+      wsl = enabled;
     };
-
-    wsl = enabled;
+    programs = {
+      common = enabled;
+      home-manager = enabled;
+      nix-ld = enabled;
+    };
   };
 
   # This value determines the NixOS release from which the default

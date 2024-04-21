@@ -11,27 +11,10 @@
     inputs.nixos-hardware.nixosModules.common-pc
   ];
 
-  wsl =
-    let
-      name = config.yukino.user.name;
-    in
-    {
-      enable = true;
-      defaultUser = name;
-      docker-desktop.enable = true;
-
-      wslConf = {
-        automount = {
-          root = "/mnt";
-        };
-
-        network = {
-          hostname = "angela";
-        };
-
-        user = {
-          default = name;
-        };
-      };
+  wsl = {
+    docker-desktop.enable = true;
+    wslConf.network = {
+      hostname = "angela";
     };
+  };
 }
