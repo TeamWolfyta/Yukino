@@ -7,6 +7,8 @@
 with lib;
 with lib.yukino;
 {
+  environment.variables.FLAKE = "/home/kieran/projects/teamwolfyta/yukino";
+
   yukino = {
     config = {
       home = {
