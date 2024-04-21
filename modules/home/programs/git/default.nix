@@ -17,7 +17,6 @@ in
     programs.git = {
       enable = true;
       delta = enabled;
-      git-credential-oauth = enabled;
       extraConfig = {
         pull.rebase = true;
         init.defaultBranch = "main";
