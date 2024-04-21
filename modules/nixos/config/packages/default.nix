@@ -7,16 +7,16 @@
 with lib;
 with lib.yukino;
 let
-  _config = config.yukino.config.packges;
+  _config = config.yukino.config.packages;
 in
 {
-  options.yukino.config.packges = {
-    enable = mkBoolOpt false "yukino.config.packges.enable";
-    enableFiles = mkBoolOpt true "yukino.config.packges.enableFiles";
-    enableMonitoring = mkBoolOpt true "yukino.config.packges.enableMonitoring";
-    enableNetworking = mkBoolOpt true "yukino.config.packges.enableNetworking";
-    enableDataManipulation = mkBoolOpt true "yukino.config.packges.enableDataManipulation";
-    enableSystemInformation = mkBoolOpt true "yukino.config.packges.enableSystemInformation";
+  options.yukino.config.packages = {
+    enable = mkBoolOpt false "yukino.config.packages.enable";
+    enableFiles = mkBoolOpt true "yukino.config.packages.enableFiles";
+    enableMonitoring = mkBoolOpt true "yukino.config.packages.enableMonitoring";
+    enableNetworking = mkBoolOpt true "yukino.config.packages.enableNetworking";
+    enableDataManipulation = mkBoolOpt true "yukino.config.packages.enableDataManipulation";
+    enableSystemInformation = mkBoolOpt true "yukino.config.packages.enableSystemInformation";
   };
 
   config = mkIf _config.enable {
