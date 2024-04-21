@@ -3,7 +3,6 @@ with lib;
 with lib.yukino;
 let
   _config = config.yukino.programs.home-manager;
-  user = config.yukino.config.user;
 in
 {
   options.yukino.programs.home-manager = with types; {
@@ -11,10 +10,11 @@ in
   };
 
   config = {
+    snowfallorg.user.${config.yukino.config.user.name}.home.config =
+      config.yukino.programs.home-manager.extraOptions;
     home-manager = {
       useUserPackages = true;
       useGlobalPkgs = true;
-      users.${user.name} = mkAliasDefinitions options.yukino.programs.home-manager.extraOptions;
     };
   };
 }
