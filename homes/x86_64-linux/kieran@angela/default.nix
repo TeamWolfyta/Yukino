@@ -1,4 +1,9 @@
-{ config, lib, ... }:
+{
+  config,
+  lib,
+  osConfig,
+  ...
+}:
 with lib;
 with lib.yukino;
 {
