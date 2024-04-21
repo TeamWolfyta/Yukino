@@ -1,6 +1,6 @@
-<!-- <div align="center" id="top">
-  <img src="./.github/app.gif" alt="Yukino" />
-</div> -->
+<div align="center" id="top">
+  <img src="./.github/assets/banner-01.png" alt="Yukino" />
+</div>
 
 <!-- &#xa0; -->
 
