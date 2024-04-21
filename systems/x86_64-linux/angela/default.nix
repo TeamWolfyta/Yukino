@@ -19,6 +19,7 @@ with lib.yukino;
     programs = {
       common = enabled;
       home-manager = enabled;
+      nh = enabled;
       nix-ld = enabled;
     };
   };
