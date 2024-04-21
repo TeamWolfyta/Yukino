@@ -13,7 +13,9 @@ with lib.yukino;
     config = {
       locale = enabled;
       nix = enabled;
-      packages = enabled;
+      packages = {
+        common = enabled;
+      };
       user.name = "kieran";
       wsl = enabled;
     };
