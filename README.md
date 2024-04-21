@@ -37,7 +37,6 @@
 - <a href="https://github.com/vimjoyer" target="_blank">vimjoyer</a> - For the awesome and informative videos on <a href="https://github.com/NixOS" target="_blank">NixOS</a>.
 - <a href="https://github.com/snowfallorg" target="_blank">Snowfall</a> - For making <a href="https://github.com/snowfallorg/lib" target="_blank">snowfall-lib</a>, it's been a massive help.
 - <a href="https://github.com/jakehamilton" target="_blank">Jake Hamilton</a> - For making <a href="https://github.com/snowfallorg" target="_blank">Snowfall</a> and his <a href="https://github.com/jakehamilton/config" target="_blank">config</a>, both have been extremly useful.
-  <br/>
 - <a href="https://youtu.be/HhZaHf8RP6g" target="_blank">Some random guy on the Internet</a> - For giving me the idea to use nixos's and home-manager's existing module directory setup to organise my modules. (I got stuck on this for like a week.)
 
 ## :memo: License
