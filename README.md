@@ -15,10 +15,6 @@
 
 <!-- Status -->
 
-<h4 align="center">
-	🚧 Constantly developing...  🚧
-</h4>
-
 <hr>
 
 <p align="center">
