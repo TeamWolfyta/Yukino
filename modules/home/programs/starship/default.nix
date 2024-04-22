@@ -11,9 +11,12 @@ in {
     programs.starship = {
       enable = true;
       settings = {
+        character = {
+          success_symbol = "[❯](bold green)";
+          error_symbol = "[𝝬](bold red)";
+        };
         hostname.ssh_only = false;
-        sudo.disabled = false;
-        username.show_always = true;
+        username.disabled = false;
       };
     };
   };
