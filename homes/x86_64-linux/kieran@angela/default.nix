@@ -15,6 +15,7 @@ with lib.yukino;
       };
     };
     programs = {
+      bun = enabled;
       eza = enabled;
       gh = enabled;
       git = {
