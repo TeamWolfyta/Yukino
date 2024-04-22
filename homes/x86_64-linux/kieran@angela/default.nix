@@ -13,6 +13,9 @@ with lib.yukino;
         username = "kieran";
         useremail = "kieran@wolfyta.dev";
       };
+      packages = {
+        nodejs = enabled;
+      };
     };
     programs = {
       bun = enabled;
