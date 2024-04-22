@@ -1,10 +1,8 @@
 { config, lib, ... }:
 with lib;
 with lib.yukino;
-let
-  _config = config.yukino.programs.zoxide;
-in
-{
+let _config = config.yukino.programs.zoxide;
+in {
   options.yukino.programs.zoxide = {
     enable = mkBoolOpt false "yukino.programs.zoxide.enable";
   };

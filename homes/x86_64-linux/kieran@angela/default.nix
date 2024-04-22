@@ -1,21 +1,13 @@
-{
-  config,
-  lib,
-  osConfig,
-  ...
-}:
+{ config, lib, osConfig, ... }:
 with lib;
-with lib.yukino;
-{
+with lib.yukino; {
   yukino = {
     config = {
       home = {
         username = "kieran";
         useremail = "kieran@wolfyta.dev";
       };
-      packages = {
-        nodejs = enabled;
-      };
+      packages = { nodejs = enabled; };
     };
     programs = {
       bun = enabled;
@@ -24,16 +16,15 @@ with lib.yukino;
       git = {
         enable = true;
         username = "TeamWolfyta";
-        signingKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHK0wpkhtQEPJq1H3b8Agnp9JHNMRiUoLcW30WRwPKMH";
+        signingKey =
+          "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHK0wpkhtQEPJq1H3b8Agnp9JHNMRiUoLcW30WRwPKMH";
       };
       starship = enabled;
       thefuck = enabled;
       zoxide = enabled;
       zsh = enabled;
     };
-    misc = {
-      xdg = enabled;
-    };
+    misc = { xdg = enabled; };
   };
 
   # This value determines the Home Manager release that your

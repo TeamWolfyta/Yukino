@@ -1,16 +1,10 @@
-{
-  config,
-  lib,
-  pkgs,
-  ...
-}:
+{ config, lib, pkgs, ... }:
 with lib;
 with lib.yukino;
 let
   _config = config.yukino.config.wsl;
   user = config.yukino.config.user;
-in
-{
+in {
   options.yukino.config.wsl = {
     enable = mkBoolOpt false "yukino.config.wsl.enable";
   };

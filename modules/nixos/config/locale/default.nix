@@ -1,10 +1,8 @@
 { config, lib, ... }:
 with lib;
 with lib.yukino;
-let
-  _config = config.yukino.config.locale;
-in
-{
+let _config = config.yukino.config.locale;
+in {
   options.yukino.config.locale = {
     enable = mkBoolOpt false "yukino.config.locale.enable";
   };

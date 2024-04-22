@@ -4,8 +4,7 @@ with lib.yukino;
 let
   _config = config.yukino.programs.git;
   home = config.yukino.config.home;
-in
-{
+in {
   options.yukino.programs.git = with types; {
     enable = mkBoolOpt false "yukino.programs.git.enable";
     username = mkOpt str home.username "yukino.programs.git.username";

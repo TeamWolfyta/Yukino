@@ -4,8 +4,7 @@ with lib.yukino;
 let
   _config = config.yukino.programs.nh;
   user = config.yukino.config.user;
-in
-{
+in {
   options.yukino.programs.nh = {
     enable = mkBoolOpt false "yukino.programs.zsh.enable";
   };
@@ -13,9 +12,7 @@ in
   config = mkIf _config.enable {
     programs.nh = enabled;
     yukino.programs.home-manager.extraOptions = {
-      home.sessionVariables = {
-        FLAKE = "$HOME/projects/teamwolfyta/yukino";
-      };
+      home.sessionVariables = { FLAKE = "$HOME/projects/teamwolfyta/yukino"; };
     };
   };
 }

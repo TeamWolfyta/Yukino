@@ -1,10 +1,8 @@
 { config, lib, ... }:
 with lib;
 with lib.yukino;
-let
-  _config = config.yukino.programs.starship;
-in
-{
+let _config = config.yukino.programs.starship;
+in {
   options.yukino.programs.starship = {
     enable = mkBoolOpt false "yukino.programs.starship.enable";
   };

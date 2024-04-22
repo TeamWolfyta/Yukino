@@ -1,16 +1,8 @@
-{
-  config,
-  inputs,
-  lib,
-  pkgs,
-  ...
-}:
+{ config, inputs, lib, pkgs, ... }:
 with lib;
 with lib.yukino;
-let
-  _config = config.yukino.programs.nix-ld;
-in
-{
+let _config = config.yukino.programs.nix-ld;
+in {
   options.yukino.programs.nix-ld = {
     enable = mkBoolOpt false "yukino.programs.nix-ld.enable";
   };

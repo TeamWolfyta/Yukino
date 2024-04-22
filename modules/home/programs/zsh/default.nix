@@ -1,15 +1,8 @@
-{
-  config,
-  lib,
-  pkgs,
-  ...
-}:
+{ config, lib, pkgs, ... }:
 with lib;
 with lib.yukino;
-let
-  _config = config.yukino.programs.zsh;
-in
-{
+let _config = config.yukino.programs.zsh;
+in {
   options.yukino.programs.zsh = {
     enable = mkBoolOpt false "yukino.programs.zsh.enable";
   };
@@ -33,7 +26,7 @@ in
           name = "you-should-use";
           src = "${pkgs.zsh-you-should-use}/share/zsh/plugins/you-should-use";
         }
-        ];
+      ];
     };
   };
 }

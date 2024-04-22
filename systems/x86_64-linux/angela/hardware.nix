@@ -1,10 +1,4 @@
-{
-  config,
-  inputs,
-  modulesPath,
-  ...
-}:
-{
+{ config, inputs, modulesPath, ... }: {
   imports = with inputs; [
     "${modulesPath}/profiles/minimal.nix"
     inputs.nixos-wsl.nixosModules.wsl
@@ -13,8 +7,6 @@
 
   wsl = {
     docker-desktop.enable = true;
-    wslConf.network = {
-      hostname = "angela";
-    };
+    wslConf.network = { hostname = "angela"; };
   };
 }

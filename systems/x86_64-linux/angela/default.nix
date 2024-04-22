@@ -1,21 +1,13 @@
-{
-  config,
-  lib,
-  pkgs,
-  ...
-}:
+{ config, lib, pkgs, ... }:
 with lib;
-with lib.yukino;
-{
+with lib.yukino; {
   imports = [ ./hardware.nix ];
 
   yukino = {
     config = {
       locale = enabled;
       nix = enabled;
-      packages = {
-        common = enabled;
-      };
+      packages = { common = enabled; };
       user.name = "kieran";
       wsl = enabled;
     };

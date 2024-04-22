@@ -1,15 +1,8 @@
-{
-  config,
-  lib,
-  pkgs,
-  ...
-}:
+{ config, lib, pkgs, ... }:
 with lib;
 with lib.yukino;
-let
-  _config = config.yukino.config.packages.common;
-in
-{
+let _config = config.yukino.config.packages.common;
+in {
   options.yukino.config.packages.common = {
     enable = mkBoolOpt false "yukino.config.packages.common.enable";
   };

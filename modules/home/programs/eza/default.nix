@@ -1,10 +1,8 @@
 { config, lib, ... }:
 with lib;
 with lib.yukino;
-let
-  _config = config.yukino.programs.eza;
-in
-{
+let _config = config.yukino.programs.eza;
+in {
   options.yukino.programs.eza = {
     enable = mkBoolOpt false "yukino.programs.eza.enable";
   };
