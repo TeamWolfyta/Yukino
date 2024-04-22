@@ -24,16 +24,15 @@ in
         enable = true;
         plugins = [ "docker" "eza" "git" "sudo" ];
       };
-      plugins =
-        let
-          plugin = name: {
-            inherit name;
-            src = "${pkgs."zsh-${name}"}/share/zsh/site-functions";
-          };
-        in
-        builtins.map plugin [
-          "fast-syntax-highlighting"
-          "you-should-use"
+      plugins = [
+        {
+          name = "fast-syntax-highlighting";
+          src = "${pkgs.zsh-fast-syntax-highlighting}/share/zsh/site-functions";
+        }
+        {
+          name = "you-should-use";
+          src = "${pkgs.zsh-you-should-use}/share/zsh/plugins/you-should-use";
+        }
         ];
     };
   };
