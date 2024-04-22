@@ -22,11 +22,7 @@ in
       historySubstringSearch = enabled;
       oh-my-zsh = {
         enable = true;
-        plugins = [
-          "docker"
-          "eza"
-          "sudo"
-        ];
+        plugins = [ "docker" "eza" "git" "sudo" ];
       };
       plugins =
         let
