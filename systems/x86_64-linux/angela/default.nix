@@ -5,6 +5,7 @@ with lib.yukino; {
 
   yukino = {
     config = {
+      fonts = enabled;
       locale = enabled;
       nix = enabled;
       packages = { common = enabled; };
