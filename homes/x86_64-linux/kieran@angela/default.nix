@@ -7,7 +7,10 @@ with lib.yukino; {
         username = "kieran";
         useremail = "kieran@wolfyta.dev";
       };
-      packages = { nodejs = enabled; };
+      packages = {
+        nodejs = enabled;
+        vhs = enabled;
+      };
     };
     programs = {
       bun = enabled;
