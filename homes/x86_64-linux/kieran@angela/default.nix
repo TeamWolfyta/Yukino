@@ -9,6 +9,7 @@ with lib.yukino; {
       };
       packages = {
         nodejs = enabled;
+        rembg = enabled;
         vhs = enabled;
       };
     };
