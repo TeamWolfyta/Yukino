@@ -7,6 +7,8 @@
     nixos-wsl.url = "github:nix-community/nixos-wsl";
     nixos-hardware.url = "github:NixOS/nixos-hardware";
 
+    nur.url = "github:nix-community/NUR";
+
     snowfall-lib = {
       url = "github:snowfallorg/lib";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -24,16 +26,17 @@
   };
 
   outputs = inputs:
-    inputs.snowfall-lib.mkFlake {
-      inherit inputs;
-      src = ./.;
-
-      snowfall = {
-        namespace = "yukino";
-        meta = {
-          name = "yukino";
-          title = "Nix(OS) config nicknamed Yukino!";
+    let
+      lib = inputs.snowfall-lib.mkLib {
+        inherit inputs;
+        src = ./.;
+        snowfall = {
+          namespace = "yukino";
+          meta = {
+            name = "yukino";
+            title = "Nix(OS) config nicknamed Yukino!";
+          };
         };
       };
-    };
+    in lib.mkFlake { overlays = with inputs; [ nur.overlay ]; };
 }
