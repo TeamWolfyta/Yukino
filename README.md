@@ -7,10 +7,10 @@
 <h1 align="center">Yukino</h1>
 
 <p align="center">
-  <img alt="Github top language" src="https://img.shields.io/github/languages/top/TeamWolfyta/yukino?color=ffffff">
-  <img alt="Github language count" src="https://img.shields.io/github/languages/count/TeamWolfyta/yukino?color=ffffff">
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/TeamWolfyta/yukino?color=ffffff">
-  <img alt="License" src="https://img.shields.io/github/license/TeamWolfyta/yukino?color=ffffff">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/TeamWolfyta/yukino?labelColor=171717&color=FFFFFF">
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/TeamWolfyta/yukino?labelColor=171717&color=FFFFFF">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/TeamWolfyta/yukino?labelColor=171717&color=FFFFFF">
+  <img alt="License" src="https://img.shields.io/github/license/TeamWolfyta/yukino?labelColor=171717&color=FFFFFF">
 </p>
 
 <!-- Status -->
