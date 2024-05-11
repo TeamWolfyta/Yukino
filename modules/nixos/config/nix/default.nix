@@ -18,6 +18,7 @@ in {
     ];
     nix = let users = [ "root" user.name ];
     in {
+      package = pkgs.nixVersions.latest;
       gc = {
         options = "--delete-older-than 30d";
         dates = "daily";
