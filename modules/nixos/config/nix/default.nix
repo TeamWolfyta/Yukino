@@ -11,6 +11,7 @@ in {
 
   config = mkIf _config.enable {
     environment.systemPackages = with pkgs; [
+      nix-health
       nix-index
       nix-output-monitor
       nix-prefetch-git
