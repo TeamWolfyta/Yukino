@@ -8,6 +8,6 @@ in {
   };
 
   config = mkIf _config.enable {
-#    home.packages = with pkgs.nur.repos.nagy.python3Packages; [ rembg ];
+    home.packages = with pkgs.nur.repos.nagy.python3Packages; [ rembg ];
   };
 }
