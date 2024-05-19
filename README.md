@@ -4,7 +4,7 @@
 
 <!-- &#xa0; -->
 
-<h1 align="center">Yukino</h1>
+<h1 align="center">Yukino (雪乃)</h1>
 
 <p align="center">
   <img alt="Github top language" src="https://img.shields.io/github/languages/top/TeamWolfyta/yukino?labelColor=171717&color=FFFFFF">
