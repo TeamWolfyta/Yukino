@@ -232,11 +232,11 @@
     },
     "nur": {
       "locked": {
-        "lastModified": 1716507882,
-        "narHash": "sha256-/nOeyzEvW7kNDSLjBTSajV6BUDX1V2N6I63jwPkwA/8=",
+        "lastModified": 1716594280,
+        "narHash": "sha256-QyntftJGPmjal0zh9Da8xxFDxP0wy4Jletvc7MtsADU=",
         "owner": "nix-community",
         "repo": "NUR",
-        "rev": "341b00e4275d17419aa379df934ebd19ab697632",
+        "rev": "20a1e073b71d6837a9cea79f7d65d520c16f8493",
         "type": "github"
       },
       "original": {
@@ -265,11 +265,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1716500926,
-        "narHash": "sha256-GBpnvjyw5Ox4xNB676sErwrT1GCK3ldWXuEw2oPk8Ao=",
+        "lastModified": 1716511874,
+        "narHash": "sha256-h1cj+qotlb+UJRaOGemtBFst8V0OFwjml4jDp2f7V2g=",
         "owner": "snowfallorg",
         "repo": "lib",
-        "rev": "9407d4127b89691ceafec0d3038dd4133ad7d0fb",
+        "rev": "439d463a8af79082bf51f8ba76b3db3da1aa2193",
         "type": "github"
       },
       "original": {
