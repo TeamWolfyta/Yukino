@@ -2,7 +2,8 @@ name: Update Flake Lock
 
 on:
   schedule:
-    - cron: "0 0 * * *"
+    # At 12:00 AM, every 2 days - jstoolset.com/cron
+    - cron: "0 0 */2 * *"
   workflow_dispatch: {}
 
 concurrency:
