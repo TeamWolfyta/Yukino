@@ -7,7 +7,5 @@ in {
     enable = mkBoolOpt false "yukino.config.packages.rembg.enable";
   };
 
-  config = mkIf _config.enable {
-    home.packages = with pkgs.nur.repos.nagy.python3Packages; [ rembg ];
-  };
+  config = mkIf _config.enable { home.packages = with pkgs; [ yukino.rembg ]; };
 }
