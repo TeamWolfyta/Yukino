@@ -29,6 +29,7 @@ with lib.${namespace};
 
   yukino = {
     packages = {
+      ani-cli = enabled;
       common = enabled;
       ffmpeg = enabled;
       gallery-dl = enabled;
