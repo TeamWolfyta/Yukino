@@ -52,6 +52,7 @@ with lib.${namespace};
     };
     suites = {
       development = {
+        csharp = enabled;
         nix = enabled;
         python = enabled;
         typescript = enabled;
