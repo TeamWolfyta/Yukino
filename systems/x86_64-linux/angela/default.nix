@@ -33,6 +33,7 @@ with lib.${namespace};
     };
     packages = {
       ani-cli = enabled;
+      asciinema = enabled;
       common = enabled;
       ffmpeg = enabled;
       gallery-dl = enabled;
