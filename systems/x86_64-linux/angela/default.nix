@@ -28,6 +28,9 @@ with lib.${namespace};
     };
 
   yukino = {
+    fonts = {
+      jetbrains-mono = enabled;
+    };
     packages = {
       ani-cli = enabled;
       common = enabled;
